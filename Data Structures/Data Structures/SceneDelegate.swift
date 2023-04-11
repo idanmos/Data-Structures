@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Data Structures
 //
-//  Created by Admin on 12/04/2023.
+//  Created by Idan Moshe on 12/04/2023.
 //
 
 import UIKit

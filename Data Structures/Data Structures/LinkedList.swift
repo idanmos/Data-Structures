@@ -2,7 +2,7 @@
 //  LinkedList.swift
 //  Data Structures
 //
-//  Created by Admin on 12/04/2023.
+//  Created by Idan Moshe on 12/04/2023.
 //
 
 import Foundation
@@ -100,7 +100,7 @@ class DataStructures {
     
     static func createLinkedList() {
         let list = LinkedList(values: Array(0...10))
-        print(list)
+        print(list) // 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
     }
     
 }
