@@ -149,6 +149,8 @@ class LinkedList<T>: CustomStringConvertible {
                 previousNode = currentNode
             }
         }
+        
+        self.count -= 1
     }
     
     /// Reverse the order of the nodes in the list.
