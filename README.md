@@ -1,2 +1,2 @@
 # Data-Structures
-Just a fuc practice with data structures
+Just a fun practice with data structures
