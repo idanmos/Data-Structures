@@ -19,9 +19,14 @@
 		847D723229E6045F00655E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D723129E6045F00655E03 /* Assets.xcassets */; };
 		847D723529E6045F00655E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D723329E6045F00655E03 /* LaunchScreen.storyboard */; };
 		847D723D29E6046E00655E03 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D723C29E6046E00655E03 /* LinkedList.swift */; };
-		84D8525829EAEBCF00B33164 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525729EAEBCF00B33164 /* Stack.swift */; };
-		84D8525A29EAEE2600B33164 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525929EAEE2600B33164 /* StackTests.swift */; };
-		84D8525B29EAEE3800B33164 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525729EAEBCF00B33164 /* Stack.swift */; };
+		84D8525829EAEBCF00B33164 /* StackWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525729EAEBCF00B33164 /* StackWithLinkedList.swift */; };
+		84D8525A29EAEE2600B33164 /* StackWithArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525929EAEE2600B33164 /* StackWithArrayTests.swift */; };
+		84D8525B29EAEE3800B33164 /* StackWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525729EAEBCF00B33164 /* StackWithLinkedList.swift */; };
+		84D8525D29EB366900B33164 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525C29EB366900B33164 /* Node.swift */; };
+		84D8525F29EB390E00B33164 /* StackWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525E29EB390E00B33164 /* StackWithArray.swift */; };
+		84D8526029EB392400B33164 /* StackWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525E29EB390E00B33164 /* StackWithArray.swift */; };
+		84D8526229EB3B9D00B33164 /* StackWithLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8526129EB3B9D00B33164 /* StackWithLinkedListTests.swift */; };
+		84D8526329EB3C9A00B33164 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8525C29EB366900B33164 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +51,11 @@
 		847D723429E6045F00655E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847D723629E6045F00655E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847D723C29E6046E00655E03 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
-		84D8525729EAEBCF00B33164 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		84D8525929EAEE2600B33164 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		84D8525729EAEBCF00B33164 /* StackWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackWithLinkedList.swift; sourceTree = "<group>"; };
+		84D8525929EAEE2600B33164 /* StackWithArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackWithArrayTests.swift; sourceTree = "<group>"; };
+		84D8525C29EB366900B33164 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		84D8525E29EB390E00B33164 /* StackWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackWithArray.swift; sourceTree = "<group>"; };
+		84D8526129EB3B9D00B33164 /* StackWithLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackWithLinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				8421CA0D29E69CC4007BA83F /* LinkedListTests.swift */,
-				84D8525929EAEE2600B33164 /* StackTests.swift */,
+				84D8525929EAEE2600B33164 /* StackWithArrayTests.swift */,
+				84D8526129EB3B9D00B33164 /* StackWithLinkedListTests.swift */,
 			);
 			path = "Data StructuresTests";
 			sourceTree = "<group>";
@@ -101,8 +110,10 @@
 				847D722829E6045E00655E03 /* AppDelegate.swift */,
 				847D722A29E6045E00655E03 /* SceneDelegate.swift */,
 				847D722C29E6045E00655E03 /* ViewController.swift */,
+				84D8525C29EB366900B33164 /* Node.swift */,
 				847D723C29E6046E00655E03 /* LinkedList.swift */,
-				84D8525729EAEBCF00B33164 /* Stack.swift */,
+				84D8525E29EB390E00B33164 /* StackWithArray.swift */,
+				84D8525729EAEBCF00B33164 /* StackWithLinkedList.swift */,
 				847D722E29E6045E00655E03 /* Main.storyboard */,
 				847D723129E6045F00655E03 /* Assets.xcassets */,
 				847D723329E6045F00655E03 /* LaunchScreen.storyboard */,
@@ -212,10 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8526029EB392400B33164 /* StackWithArray.swift in Sources */,
+				84D8526329EB3C9A00B33164 /* Node.swift in Sources */,
 				8421CA1529E69D05007BA83F /* ViewController.swift in Sources */,
 				8421CA1429E69D01007BA83F /* LinkedList.swift in Sources */,
-				84D8525B29EAEE3800B33164 /* Stack.swift in Sources */,
-				84D8525A29EAEE2600B33164 /* StackTests.swift in Sources */,
+				84D8525B29EAEE3800B33164 /* StackWithLinkedList.swift in Sources */,
+				84D8526229EB3B9D00B33164 /* StackWithLinkedListTests.swift in Sources */,
+				84D8525A29EAEE2600B33164 /* StackWithArrayTests.swift in Sources */,
 				8421CA0E29E69CC4007BA83F /* LinkedListTests.swift in Sources */,
 				8421CA1729E69D0A007BA83F /* AppDelegate.swift in Sources */,
 				8421CA1629E69D08007BA83F /* SceneDelegate.swift in Sources */,
@@ -226,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8525F29EB390E00B33164 /* StackWithArray.swift in Sources */,
 				847D722D29E6045E00655E03 /* ViewController.swift in Sources */,
-				84D8525829EAEBCF00B33164 /* Stack.swift in Sources */,
+				84D8525829EAEBCF00B33164 /* StackWithLinkedList.swift in Sources */,
 				847D722929E6045E00655E03 /* AppDelegate.swift in Sources */,
+				84D8525D29EB366900B33164 /* Node.swift in Sources */,
 				847D723D29E6046E00655E03 /* LinkedList.swift in Sources */,
 				847D722B29E6045E00655E03 /* SceneDelegate.swift in Sources */,
 			);

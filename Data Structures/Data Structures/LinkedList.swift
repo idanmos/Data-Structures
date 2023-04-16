@@ -7,36 +7,11 @@
 
 import Foundation
 
-/// A class representing a node in a singly-linked list.
-class LinkedListNode<T>: CustomStringConvertible {
-    
-    var value: T
-    var next: LinkedListNode<T>?
-    
-    /// Initialize a new node with a given value.
-    ///
-    /// - Parameter value: The value to be stored in the node.
-    init(value: T, next: LinkedListNode<T>? = nil) {
-        self.value = value
-        self.next = next
-    }
-    
-    /// A textual representation of the node, including its value and a reference to the next node.
-    var description: String {
-        if let next {
-            return "value = \(self.value) | next = \(next)"
-        } else {
-            return "value = \(self.value) | next = nil"
-        }
-    }
-    
-}
-
 /// A class representing a singly-linked list.
 class LinkedList<T>: CustomStringConvertible {
     
-    var head: LinkedListNode<T>?
-    var tail: LinkedListNode<T>?
+    private(set) var head: Node<T>?
+    private(set) var tail: Node<T>?
     
     private(set) var count: Int = 0
     
@@ -60,7 +35,7 @@ class LinkedList<T>: CustomStringConvertible {
     ///
     /// - Parameter value: The value to be stored in the new node.
     func prepend(value: T) {
-        let newNode = LinkedListNode(value: value)
+        let newNode = Node(value: value)
         
         if self.head == nil {
             self.head = newNode
@@ -77,7 +52,7 @@ class LinkedList<T>: CustomStringConvertible {
     ///
     /// - Parameter value: The value to be stored in the new node.
     func append(value: T) {
-        let newNode = LinkedListNode(value: value)
+        let newNode = Node(value: value)
         
         if self.tail == nil {
             self.head = newNode
@@ -94,7 +69,7 @@ class LinkedList<T>: CustomStringConvertible {
     ///
     /// - Parameter index: The index of the node to be returned.
     /// - Returns: The node at the specified index, or nil if the index is out of bounds.
-    func node(at index: Int) -> LinkedListNode<T>? {
+    func node(at index: Int) -> Node<T>? {
         var currentNode = self.head
         var currentIndex: Int = 0
         
@@ -117,7 +92,7 @@ class LinkedList<T>: CustomStringConvertible {
         } else if index == self.count {
             self.append(value: value)
         } else if index > 0 && index < self.count {
-            let newNode = LinkedListNode(value: value)
+            let newNode = Node(value: value)
             let previousNode = self.node(at: index)
             newNode.next = previousNode?.next
             previousNode?.next = newNode
@@ -154,8 +129,8 @@ class LinkedList<T>: CustomStringConvertible {
     /// Reverse the order of the nodes in the list.
     func reverse() {
         var currentNode = self.head
-        var previousNode: LinkedListNode<T>? = nil
-        var nextNode: LinkedListNode<T>? = nil
+        var previousNode: Node<T>? = nil
+        var nextNode: Node<T>? = nil
         
         while currentNode != nil {
             nextNode = currentNode?.next
@@ -178,17 +153,6 @@ class LinkedList<T>: CustomStringConvertible {
         }
         
         return parts.joined(separator: " -> ")
-    }
-    
-}
-
-/// A class containing static methods for working with data structures.
-class DataStructures {
-    
-    /// Create a singly-linked list with a range of integer values and print its textual representation.
-    static func createLinkedList() {
-        let list = LinkedList(values: Array(0..<10))
-        print(list) // 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
     }
     
 }
